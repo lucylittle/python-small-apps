@@ -3,17 +3,22 @@
 import sys
 
 def Hello(name):
-	if name == 'karam' or name == 'cj':
-		name = 'Karambir'
-		print 'Changing name'
-	else:
-		print 'Else'
-	name = name + '!!!'
-	print 'Hello', name	
+  if name == 'karam' or name == 'cj':
+    name = 'Karambir'
+    print 'Changing name'
+  else:
+    print 'Didn\'t expect that name :)'
+  name = name + '!!!'
+  print 'Hello', name	
 
 def main():
-	Hello(sys.argv[1])
+  arguement = sys.argv[1] 
+#  if arguement == false:
+#    print 'give some value'
+#  else:
+  print arguement, '???'
+  Hello(arguement)
 
 
 if __name__ == "__main__":
-	main()
+  main()
