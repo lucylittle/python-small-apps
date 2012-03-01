@@ -24,9 +24,14 @@
 # So donuts(5) returns 'Number of donuts: 5'
 # and donuts(23) returns 'Number of donuts: many'
 def donuts(count):
-  if count < 10:
-    print 'Number of donuts: %d', (int(count))
-  return
+  if count<10:
+    first = 'Number of donuts: '
+    answer = first + str(count)
+    return answer
+  else:
+    first = 'Number of donuts: '
+    answer = first + 'many'
+    return answer
 
 
 # B. both_ends
